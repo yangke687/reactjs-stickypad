@@ -4,7 +4,7 @@ var AppStore = require('../stores/AppStore');
 
 function getAppState() {
 	return {
-
+		notes: []
 	}
 }
 
@@ -25,6 +25,18 @@ var App = React.createClass({
 		return (
 			<div>
 				<div className="off-canvas-wrapper">
+					<div className="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+						<div className="off-canvas position-left reveal-for-large" data-off-canvas data-position="left">
+							<div className="row column">
+								<br />
+								// ADD NOTE FORM
+
+							</div>
+						</div>
+						<div className="off-canvas-content" data-off-canvas-content>
+							// NOTE LIST
+						</div>
+					</div>
 				</div>
 			</div>
 		);
