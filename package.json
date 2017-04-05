@@ -1,0 +1,23 @@
+{
+	"name": "stickypad",
+	"version": "1.0.0",
+	"description": "stickypad notebook with react.js + flux",
+	"scripts": {
+		"text": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Ke Yang",
+	"license": "ISC",
+	"devDependencies": {
+		"browserify": "*",
+		"flux": "*",
+		"gulp": "*",
+		"gulp-connect": "*",
+		"reactify": "*",
+		"vinyl-source-stream": "*",
+		"object-assign": "*"
+	},
+	"dependencies": {
+		"react": "^0.14.7",
+		"react-dom": "^0.14.7"
+	}
+}
