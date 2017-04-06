@@ -1,4 +1,5 @@
 module.exports = {
 	ADD_NOTE: 'ADD_NOTE',
-	RECV_NOTES: 'RECV_NOTES'
+	RECV_NOTES: 'RECV_NOTES',
+	REMOVE_NOTE: 'REMOVE_NOTE',
 };

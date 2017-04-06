@@ -13,6 +13,12 @@ var AppActions = {
 			actionType: AppConstants.RECV_NOTES,
 			notes: notes
 		});
+	},
+	removeNote: function(id) {
+		AppDispatcher.handleViewAction({
+			actionType: AppConstants.REMOVE_NOTE,
+			noteId: id
+		});
 	}
 }
 
