@@ -23,6 +23,9 @@ var AppStore = assign({}, EventEmitter.prototype, {
 	},
 	getNotes: function() {
 		return _notes;
+	},
+	setNotes: function(notes) {
+		_notes = notes;
 	}
 });
 
@@ -36,6 +39,13 @@ AppDispatcher.register(function(payload) {
 			// api save
 			AppAPI.addNote(action.note);
 			// emit change
+			AppStore.emit(CHANGE_EVENT);
+			break;
+		case AppConstants.RECV_NOTES:
+			console.log('receiving notes...');
+			// store set notes
+			AppStore.setNotes(action.notes)
+				// emit change
 			AppStore.emit(CHANGE_EVENT);
 			break;
 	}
